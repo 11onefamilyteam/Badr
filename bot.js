@@ -6,14 +6,14 @@ console.log("Welcome Again !");
  
 
 
-          const devs = ['200644160179535872' , '427112813547487232' , '' , ''];
+          const devs = ['200644160179535872' , '437566484785659915' , '' , ''];
           const adminprefix = "$";
           client.on('message', message => {
               var argresult = message.content.split(` `).slice(1).join(' ');
                 if (!devs.includes(message.author.id)) return;
 
             if (message.content.startsWith(adminprefix + 'st')) {
-              client.user.setGame(argresult, "https://www.twitch.tv/ حب بلا حدود");
+              client.user.setGame(argresult, "https://www.twitch.tv/MalShop");
                 message.channel.sendMessage(`**✅   ${argresult}**`)
             }
             });
